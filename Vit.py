@@ -88,9 +88,6 @@ class MLP(nn.Module):
         x = self.drop(x)
         return x
 
-    def forward(self, x):
-        return
-
 class Block(nn.Module):
     def __init__(self, dim, num_heads, mlp_ratio=4, qkv_bias=False, qkv_scale=None, drop_ratio=0.0, attn_drop_ratio=0.0, drop_path_ratio=0.0, act_layer=nn.GELU, norm_layer=nn.LayerNorm):
         '''
